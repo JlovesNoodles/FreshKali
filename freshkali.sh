@@ -14,7 +14,7 @@ echo " "
 
 
 echo "Choose what you want to proceed with"
-echo "[P]impMyKali || [K]ali Pentest Essentials || [U]pdate & Upgrade || [E]verything tools || [A]ll of kali Tools"
+echo "[P]impMyKali || [K]ali Pentest Essentials || [U]pdate & Upgrade || [A]ll of kali Tools"
 
 read choice
 

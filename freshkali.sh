@@ -120,7 +120,7 @@ function freshkali(){
 
 
 
-	function reboot(){
+	function rebootthis(){
 		echo " "
 		echo " "
 		echo " ------------------------------------------"
@@ -130,10 +130,10 @@ function freshkali(){
 		echo " "
 		echo " "
 
-		read reboot
-		if [[ $reboot == "Y" || $reboot == "y" ]]; then
+		read rebootthis
+		if [[ $rebootthis == "Y" || $rebootthis == "y" ]]; then
 		sudo reboot now
-		elif [[ $reboot == "N" || $reboot == "n" ]]; then
+		elif [[ $rebootthis == "N" || $rebootthis == "n" ]]; then
 		freshkali
 		
 		else
@@ -148,11 +148,12 @@ function freshkali(){
 		exit
 		fi
 	}
-	reboot
+	rebootthis
 
 }
 
 
 freshkali
+
 
 

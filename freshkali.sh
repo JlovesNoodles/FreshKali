@@ -34,8 +34,18 @@ KaliUpdate
 kaliMSF
 kaliAll
 else 
-echo "Wrong Choice brother"
+echo " "
+echo " "
+echo " -----------------------------------------------------"
+echo " [+][+][+][+][+] WRONG CHOICE BROTHER [+][+][+][+][+] "
+echo " -----------------------------------------------------"
+echo " "
+echo " "
 exit
+fi
+
+
+
 
 
 

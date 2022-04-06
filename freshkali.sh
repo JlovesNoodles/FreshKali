@@ -18,36 +18,6 @@ echo "[P]impMyKali || [K]ali Pentest Essentials || [U]pdate & Upgrade || [E]very
 read choice
 
 if [[ $choice == "P" || $choice == "p" ]]; then
-PimpKali
-elif [[ $choice == "K" || $choice == "u" ]]; then
-KaliEssentials
-elif [[ $choice == "U" || $choice == "u" ]]; then
-KaliUpdate
-elif [[ $choice == "M" || $choice == "m" ]]; then
-kaliMSF
-elif [[ $choice == "A" || $choice == "a" ]]; then
-kaliAll
-elif [[ $choice == "C" || $choice == "c" ]]; then 
-PimpKali
-KaliEssentials
-KaliUpdate
-kaliMSF
-kaliAll
-else 
-echo " "
-echo " "
-echo " -----------------------------------------------------"
-echo " [+][+][+][+][+] WRONG CHOICE BROTHER [+][+][+][+][+] "
-echo " -----------------------------------------------------"
-echo " "
-echo " "
-exit
-fi
-
-
-
-
-
 
 function PimpKali(){
 	echo " "
@@ -66,8 +36,12 @@ function PimpKali(){
 	
 }
 
+PimpKali
 
 
+
+
+elif [[ $choice == "K" || $choice == "k" ]]; then
 
 function KaliEssentials(){
 
@@ -87,8 +61,10 @@ function KaliEssentials(){
 	sudo  ./the_essentials.sh --skip
 	
 }
+KaliEssentials
 
 
+elif [[ $choice == "U" || $choice == "u" ]]; then
 
 function KaliUpdate(){
 
@@ -104,8 +80,9 @@ function KaliUpdate(){
 	sudo apt autoremove
 }
 
+KaliUpdate
 
-
+elif [[ $choice == "M" || $choice == "m" ]]; then
 
 function kaliMSF(){
 	echo " "
@@ -117,11 +94,11 @@ function kaliMSF(){
 	echo " "
 	
 	sudo msfupdate
-
-
-
+kaliMSF
 }
 
+
+elif [[ $choice == "A" || $choice == "a" ]]; then
 
 
 function kaliAll(){
@@ -135,7 +112,19 @@ function kaliAll(){
 	echo " "
 	
 	sudo apt install kali-linux-everything 
-
-
 }
+kaliAll
+
+else 
+echo " "
+echo " "
+echo " -----------------------------------------------------"
+echo " [+][+][+][+][+] WRONG CHOICE BROTHER [+][+][+][+][+] "
+echo " -----------------------------------------------------"
+echo " "
+echo " "
+exit
+fi
+
+
 

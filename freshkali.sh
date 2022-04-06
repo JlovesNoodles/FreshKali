@@ -78,7 +78,7 @@ function KaliUpdate(){
 	echo " "
 
 	sudo apt-get update && apt-get full-upgrade -y
-	sudo apt autoremove
+	sudo apt autoremove -y
 }
 
 KaliUpdate

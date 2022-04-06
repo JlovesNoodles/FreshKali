@@ -92,7 +92,7 @@ function kaliAll(){
 	echo " "
 	echo " "
 	echo " --------------------------------------"
-	echo "[+] Updating your MSF. Sit, Relax, Wait"
+	echo "[+] Installing Everything Sit, Relax, Wait"
 	echo " --------------------------------------"
 	echo " "
 	echo " "

@@ -12,8 +12,9 @@ echo " -------------------------------------------------"
 echo " "
 echo " "
 
+
 echo "Choose what you want to proceed with"
-echo "[P]impMyKali || [K]ali Pentest Essentials || [U]pdate & Upgrade || [E]verything tools || [M]etasploit Update || [A]ll of kali Tools || [C]omplete pimping"
+echo "[P]impMyKali || [K]ali Pentest Essentials || [U]pdate & Upgrade || [E]verything tools || [A]ll of kali Tools"
 
 read choice
 
@@ -81,21 +82,6 @@ function KaliUpdate(){
 }
 
 KaliUpdate
-
-elif [[ $choice == "M" || $choice == "m" ]]; then
-
-function kaliMSF(){
-	echo " "
-	echo " "
-	echo " --------------------------------------"
-	echo "[+] Updating your MSF. Sit, Relax, Wait"
-	echo " --------------------------------------"
-	echo " "
-	echo " "
-	
-	sudo msfupdate
-kaliMSF
-}
 
 
 elif [[ $choice == "A" || $choice == "a" ]]; then

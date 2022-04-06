@@ -124,7 +124,9 @@ function freshkali(){
 		echo " "
 		echo " "
 		echo " ------------------------------------------"
-		echo "[+] FINISHED. DO YOU WANNA REBOOT NOW? [+] "
+		echo "[+] FINISHED. DO YOU WANNA REBOOT NOW?  [+] "
+		echo " "
+		echo " "
 		echo "[+] [Y]es Please [N]o I'll upgrade more [+] "	
 		echo " ------------------------------------------"
 		echo " "
@@ -154,6 +156,5 @@ function freshkali(){
 
 
 freshkali
-
 
 

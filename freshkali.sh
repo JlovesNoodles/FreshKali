@@ -14,7 +14,7 @@ echo " "
 
 function freshkali(){
 	echo "Choose what you want to proceed with"
-	echo "[P]impMyKali || [K]ali Pentest Essentials || [U]pdate & Upgrade || [A]ll of kali Tools"
+	echo "[P]impMyKali || [K]ali Pentest Essentials || [U]pdate & Upgrade || || [C]lean my Kali [A]ll of kali Tools"
 
 	read choice
 
@@ -104,6 +104,30 @@ function freshkali(){
 	}
 	kaliAll
 	
+	elif [[ $choice == "C" || $choice == "c" ]]; then
+
+
+	function cleankali(){
+
+		echo " "
+		echo " "
+		echo " --------------------------------------"
+		echo "[+] Cleaning Everything Sit, Relax, Wait"
+		echo " --------------------------------------"
+		echo " "
+		echo " "
+		
+		sudo apt-get clean && apt autoremove -y
+	
+	
+	}
+	cleankali
+	
+	
+	
+	
+	
+	
 
 	else
 	echo " "
@@ -116,6 +140,8 @@ function freshkali(){
 			
 	exit
 	fi
+	
+	
 
 
 
@@ -156,5 +182,19 @@ function freshkali(){
 
 
 freshkali
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

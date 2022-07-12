@@ -4,13 +4,7 @@
 #Run this script if you have a fresh kali-linux.
 
 
-echo " "
-echo " "
-echo " -------------------------------------------------"
-echo " [+] WELCOME TO ONE STOP SHOP OF KALI UPGRADE [+] "
-echo " -------------------------------------------------"
-echo " "
-echo " "
+cowsay -f dragon "WELCOME TO ONE STOP SHOP OF KALI UPGRADE" | lolcat
 
 function freshkali(){
 	echo "Choose what you want to proceed with"
@@ -77,7 +71,7 @@ function freshkali(){
 		echo " "
 		echo " "
 
-		sudo apt-get update && apt-get full-upgrade -y
+		sudo apt-get update && apt-get full-upgrade -y && apt-get dist-upgrade
 		sudo apt autoremove
 	}
 
